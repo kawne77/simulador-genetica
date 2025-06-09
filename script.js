@@ -1150,7 +1150,7 @@ function iniciarSesion() {
 }
 
 function iniciarSimulacion() {
-  preguntas = preguntasNormalizadas.sort(() => 0.5 - Math.random()).slice(0, 70);
+  preguntas = preguntasNormalizadas.sort(() => 0.5 - Math.random()).slice(0, 20);
   const container = document.getElementById('preguntas-container');
   const resultado = document.getElementById('resultado');
   const boton = document.getElementById('boton-enviar');
