@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simulador de Genética</title>
+  <title>Simulador de Examen - Genética</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #6a0dad, #9b59b6);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #f8f1ff;
+    }
+
+    #preguntas-container {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      max-width: 800px;
+    }
+
+    button {
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #732d91;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #ffeaa7;
+    }
+
+    #boton-inicio {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #dcd6f7;
+      color: #6a0dad;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    #boton-inicio:hover {
+      background-color: #b9a9e8;
+    }
+  </style>
 </head>
 
 <body>
@@ -13,7 +71,8 @@
   <button id="boton-enviar" onclick="corregir()">Enviar respuestas</button>
   <button id="boton-reintentar" onclick="iniciarSimulacion()" style="display:none;">Reintentar</button>
   <div id="resultado"></div>
-
+  <a id="boton-inicio" href="https://kawne77.github.io/menu-simuladores/">Volver al menú principal</a>
   <script src="script.js"></script>
 </body>
+
 </html>
